@@ -675,7 +675,7 @@ Example:
 Set the visibility timeout of message 1 to 30 seconds from now.
 
 ```sql
-select * from pgmq.set_vt('my_queue', 11, 30);
+select * from pgmq.set_vt('my_queue', 1, 30);
  msg_id | read_ct |          enqueued_at          |              vt               |       message        | headers
 --------+---------+-------------------------------+-------------------------------+----------------------+---------
      1 |       0 | 2023-10-28 19:42:21.778741-05 | 2023-10-28 19:59:34.286462-05 | {"hello": "world_0"} |
